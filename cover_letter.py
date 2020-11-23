@@ -1,5 +1,6 @@
 from docx import Document
 import re 
+import os
 
 def docx_replace_regex(doc_obj, regex , replace):
 
@@ -19,6 +20,9 @@ def docx_replace_regex(doc_obj, regex , replace):
 
 
 def main():
+    if not os.path.isdir('./data'):  # If the data directory does not exist, create it
+        os.mkdir('./data')
+
     company = "Barber Collins"
     title = "Junior Copywriter Extraordinaire"
     regex1 = re.compile("\<company\>")
