@@ -1,5 +1,5 @@
-# resume-builder
-Using Python and Machine Learning to quickly and effectively build better resumes/cover letters based on the specific job descriptions you're applying to.
+# Tailor
+Using Python and Machine Learning to quickly and effectively tailor resumes/cover letters based on the specific job descriptions you're applying to.
 
 ## Usage
 1. Upload a cover letter into the /data folder
