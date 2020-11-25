@@ -1,5 +1,6 @@
 # Resume-Builder project ignores
 data/
+input/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
