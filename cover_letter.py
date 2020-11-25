@@ -20,19 +20,19 @@ def docx_replace_regex(doc_obj, regex , replace):
 
 
 def main():
-    if not os.path.isdir('./data'):  # If the data directory does not exist, create it
-        os.mkdir('./data')
+    if not os.path.isdir('./input'):  # If the data directory does not exist, create it
+        os.mkdir('./input')
 
     company = "Barber Collins"
     title = "Junior Copywriter Extraordinaire"
     regex1 = re.compile("\<company\>")
     regex2 = re.compile("\<title\>")
 
-    filename = './data/cover_letter.docx'
+    filename = './input/cover_letter.docx'
     doc = Document(filename)
     docx_replace_regex(doc, regex1 , company)
     docx_replace_regex(doc, regex2 , title)
-    doc.save('./data/result.docx')
+    doc.save('./input/result.docx')
 
     # for p in doc.paragraphs:
     #     print(p.text)
